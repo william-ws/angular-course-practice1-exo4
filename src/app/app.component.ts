@@ -6,5 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'practice4';
+  game: Array<any>;
+
+  constructor() {
+    this.game = [];
+
+    this.game.push({
+      name: 'naruto',
+      technic: 'multiclonnage'
+    });
+
+    this.game.push({
+      name: 'Black Clover',
+      technic: 'Black meteorite'
+    });
+  }
+  alertgameTechnic(technic: any) {
+    alert(technic);
+  }
 }
